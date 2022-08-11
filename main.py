@@ -9,3 +9,9 @@ app = FastAPI()
 # function
 async def index():
     return {'data':{'name':'Deepak'}};
+
+
+#another route
+@app.get("/about")
+def about():
+    return {'data':{'about page'}}
