@@ -23,6 +23,8 @@ FAST API is a python framework .
 
 ## How to use
 
+make sure that python3 and sqlite3 are installed...
+
 1.Clone this repository
 
 ```git 
