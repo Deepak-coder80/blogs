@@ -1,7 +1,7 @@
 from fastapi import FastAPI,Depends
-from . import schemas
-from . import database
-from . import models
+import schemas
+import database
+import models
 from sqlalchemy.orm import Session
 app = FastAPI()
   
@@ -16,7 +16,7 @@ def get_db():
         
 
 # create a blog
-@app.post('/blog',status_cod=201)
+@app.post('/blog',status_code=201)
 def create(request:schemas.Blog,db:Session=Depends(get_db)):
     new_blog = models.Blog(title=request.title,body=request.body)
     db.add(new_blog)
