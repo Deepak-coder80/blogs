@@ -53,15 +53,16 @@ make sure that python3 and sqlite3 are installed...
 
 ```
     cd blog
-
+```
+```
     uvicorn main:app --reload
 ```
 6.Then go to browser and goto port 8000
 ```
     http://localhost:8000/
+```
 
-    or
-    
+```    
     http://127.0.0.1:8000/
 
 ```
